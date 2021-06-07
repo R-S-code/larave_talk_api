@@ -1,0 +1,314 @@
+@charset "utf-8";
+
+html {
+    font-size: 10px;
+}
+// css変数
+$white: #ffffff;
+$gray: #c4c4c4;
+$bg-gray: #f4f4f4;
+$border-gray: #8c8c8c;
+$blue: #3aabd2;
+$green: #3ad2b7;
+$default-padding: 3rem;
+
+// ヘッダー
+.header {
+    align-items: center;
+    background-color: $blue;
+    box-sizing: border-box;
+    display: flex;
+    height: 12rem;
+    justify-content: center;
+    padding: 0 $default-padding;
+    width: 100%;
+    &__title {
+        margin-left: auto;
+        img {
+            height: 7.6rem;
+            width: 36.8reml
+        }
+    }
+    &__robot-icon {
+        margin-left: auto;
+        img {
+            height: 98px;
+            width: 98px;
+        }
+    }
+}
+
+main {
+    padding: 0 $default-padding;
+}
+
+// チャット表示画面
+.chatting-field {
+    background-color: $bg-gray;
+    border: 0.4rem solid $blue;
+    border-radius: 0.8rem;
+    height: 55rem;
+    margin-top: $default-padding;
+    overflow: scroll;
+    padding-bottom: 4rem;
+    width: 100%;
+    &__reset-btn {
+        background-color: $blue;
+        border: none;
+        border-radius: 0.4rem;
+        color: $white;
+        cursor: pointer;
+        font-size: 2.4rem;
+        font-weight: bold;
+        padding: 1.3rem 6.5rem;
+        position: absolute;
+        transition: 0.2s;
+        z-index: 1;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    &__search {
+        display: flex;
+        position: absolute;
+        right: 4rem;
+        z-index: 1;
+        input {
+            border: 0.4rem solid $blue;
+            border-radius: 0 0 0 0.4rem;
+            border-right: none;
+            border-top: none;
+            box-sizing: border-box;
+            display: block;
+            height: 5.4rem;
+            width: 18rem;
+            &:focus {
+                outline: 0;
+            }
+        }
+    }
+    &__search-divide {
+        align-items: center;
+        background-color: $white;
+        border-bottom: 0.4rem solid $blue;
+        display: flex;
+        padding-right: 1rem;
+    }
+    &__search-result-num {
+        align-items: center;
+        background-color: $white;
+        border-bottom: 0.4rem solid $blue;
+        display: flex;
+        padding-right: 1rem;
+    }
+    &__search-btn-up {
+        background-color: $white;
+        border: none;
+        border-bottom: 0.4rem solid $blue;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 2rem;
+        transition: 0.2s;
+        img {
+            width: 2rem;
+        }
+        &:hover {
+            background-color: $blue;
+        }
+    }
+    &__search-btn-down {
+        background-color: $white;
+        border: none;
+        border-bottom: 0.4rem solid $blue;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 2rem;
+        transition: 0.2s;
+        img {
+            width: 2rem;
+        }
+        &:hover {
+            background-color: $blue;
+        }
+    }
+    &__chatting-place {
+        margin-top: 12rem;
+    }
+    // ロボットのチャット
+    &__robot-chat {
+        display: flex;
+        margin-top:  5.5rem;
+    }
+    &__robot-chat-icon {
+        align-items: center;
+        background-color: $white;
+        border: 0.2rem solid $blue;
+        border-radius: 1rem;
+        display: flex;
+        height: 7.2rem;
+        flex-shrink: 0;
+        justify-content: center;
+        margin-left: 3.8rem;
+        width: 7.2rem;
+        img {
+            height: 4.8rem;
+            width: 4.8rem;
+        }
+    }
+    &__robot-chat-content {
+        align-items: center;
+        background-color: $white;
+        border: 0.2rem solid $blue;
+        border-radius: 1rem;
+        box-shadow: 2px 2px 4px rgb(184, 184, 184);
+        display: flex;
+        font-size: 1.6rem;
+        margin-left: 5rem;
+        padding: 0 1rem;
+        position: relative;
+        text-align: center;
+        &::before{
+            border-bottom: 15px solid transparent;
+            border-right: 2rem solid $blue;
+            border-top: 15px solid transparent;
+            content: '';
+            display: block;
+            height: 0;
+            left: -2rem;
+            position: absolute;
+            width: 0;
+        }
+        &::after{
+            border-bottom: 15px solid transparent;
+            border-right: 2rem solid $white;
+            border-top: 15px solid transparent;
+            content: '';
+            display: block;
+            height: 0;
+            left: -1.6rem;
+            position: absolute;
+            width: 0;
+        }
+    }
+
+     // ユーザーのチャット
+     &__user-chat {
+        display: flex;
+        margin-top:  5.5rem;
+    }
+    &__user-chat-icon {
+        align-items: center;
+        background-color: $white;
+        border: 0.2rem solid $green;
+        border-radius: 1rem;
+        display: flex;
+        height: 7.2rem;
+        justify-content: center;
+        margin-right: 3.8rem;
+        width: 7.2rem;
+        img {
+            height: 4.8rem;
+            width: 4.8rem;
+        }
+    }
+    &__user-chat-content {
+        align-items: center;
+        background-color: $white;
+        border: 0.2rem solid $green;
+        border-radius: 1rem;
+        box-shadow: 2px 2px 4px rgb(184, 184, 184);
+        display: flex;
+        font-size: 1.6rem;
+        margin-left: auto;
+        margin-right: 5rem;
+        padding: 0 1rem;
+        position: relative;
+        text-align: center;
+        &::before{
+            border-bottom: 15px solid transparent;
+            border-left: 2rem solid $green;
+            border-top: 15px solid transparent;
+            content: '';
+            display: block;
+            height: 0;
+            position: absolute;
+            right: -2rem;
+            width: 0;
+        }
+        &::after{
+            border-bottom: 15px solid transparent;
+            border-left: 2rem solid $white;
+            border-top: 15px solid transparent;
+            content: '';
+            display: block;
+            height: 0;
+            position: absolute;
+            right: -1.6rem;
+            width: 0;
+        }
+    }
+}
+
+//チャット入力
+.sending-field {
+    display: flex;
+    height: 5.5rem;
+    margin-top: 4rem;
+    &__input-chat {
+        border: 0.2rem solid $border-gray;
+        border-right: none;
+        border-radius: 0.8rem 0 0 0.8rem;
+        width: 100%;
+        input {
+            box-sizing: border-box;
+            font-size: 1.6rem;
+            height: 100%;
+            padding: 1rem;
+            width: 100%;
+        }
+    }
+    &__send-btn {
+        background-color: $blue;
+        border: none;
+        color: $white;
+        cursor: pointer;
+        font-size: 1.6rem;
+        font-weight: bold;
+        height: 5.5rem;
+        transition: 0.2s;
+        width: 18rem;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    &__microphone {
+        background-color: $green;
+        border: none;
+        border-radius:  0 0.8rem 0.8rem 0;
+        box-sizing: border-box;
+        cursor: pointer;
+        padding: 0 3.6rem;
+        transition: 0.2s;
+        &:hover {
+            opacity: 0.8;
+        }
+        img {
+            height: 3.6rem;
+            width: 2.5rem;
+        }
+    }
+}
+
+// フッター
+.footer {
+    height: 9.8rem;
+    margin-top: 8.5rem;
+    width: 100%;
+    &__logo {
+        text-align:center;
+        img {
+            height: 6.4rem;
+            width: 24rem;
+        }
+    }
+}

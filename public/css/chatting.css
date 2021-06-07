@@ -1,0 +1,297 @@
+html {
+  font-size: 10px;
+}
+
+.header {
+  align-items: center;
+  background-color: #3aabd2;
+  box-sizing: border-box;
+  display: flex;
+  height: 12rem;
+  justify-content: center;
+  padding: 0 3rem;
+  width: 100%;
+}
+.header__title {
+  margin-left: auto;
+}
+.header__title img {
+  height: 7.6rem;
+  width: 36.8reml;
+}
+.header__robot-icon {
+  margin-left: auto;
+}
+.header__robot-icon img {
+  height: 98px;
+  width: 98px;
+}
+
+main {
+  padding: 0 3rem;
+}
+
+.chatting-field {
+  background-color: #f4f4f4;
+  border: 0.4rem solid #3aabd2;
+  border-radius: 0.8rem;
+  height: 55rem;
+  margin-top: 3rem;
+  overflow: scroll;
+  padding-bottom: 4rem;
+  width: 100%;
+}
+.chatting-field__reset-btn {
+  background-color: #3aabd2;
+  border: none;
+  border-radius: 0.4rem;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 2.4rem;
+  font-weight: bold;
+  padding: 1.3rem 6.5rem;
+  position: absolute;
+  transition: 0.2s;
+  z-index: 1;
+}
+.chatting-field__reset-btn:hover {
+  opacity: 0.8;
+}
+.chatting-field__search {
+  display: flex;
+  position: absolute;
+  right: 4rem;
+  z-index: 1;
+}
+.chatting-field__search input {
+  border: 0.4rem solid #3aabd2;
+  border-radius: 0 0 0 0.4rem;
+  border-right: none;
+  border-top: none;
+  box-sizing: border-box;
+  display: block;
+  height: 5.4rem;
+  width: 18rem;
+}
+.chatting-field__search input:focus {
+  outline: 0;
+}
+.chatting-field__search-divide {
+  align-items: center;
+  background-color: #ffffff;
+  border-bottom: 0.4rem solid #3aabd2;
+  display: flex;
+  padding-right: 1rem;
+}
+.chatting-field__search-result-num {
+  align-items: center;
+  background-color: #ffffff;
+  border-bottom: 0.4rem solid #3aabd2;
+  display: flex;
+  padding-right: 1rem;
+}
+.chatting-field__search-btn-up {
+  background-color: #ffffff;
+  border: none;
+  border-bottom: 0.4rem solid #3aabd2;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 2rem;
+  transition: 0.2s;
+}
+.chatting-field__search-btn-up img {
+  width: 2rem;
+}
+.chatting-field__search-btn-up:hover {
+  background-color: #3aabd2;
+}
+.chatting-field__search-btn-down {
+  background-color: #ffffff;
+  border: none;
+  border-bottom: 0.4rem solid #3aabd2;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 2rem;
+  transition: 0.2s;
+}
+.chatting-field__search-btn-down img {
+  width: 2rem;
+}
+.chatting-field__search-btn-down:hover {
+  background-color: #3aabd2;
+}
+.chatting-field__chatting-place {
+  margin-top: 12rem;
+}
+.chatting-field__robot-chat {
+  display: flex;
+  margin-top: 5.5rem;
+}
+.chatting-field__robot-chat-icon {
+  align-items: center;
+  background-color: #ffffff;
+  border: 0.2rem solid #3aabd2;
+  border-radius: 1rem;
+  display: flex;
+  height: 7.2rem;
+  flex-shrink: 0;
+  justify-content: center;
+  margin-left: 3.8rem;
+  width: 7.2rem;
+}
+.chatting-field__robot-chat-icon img {
+  height: 4.8rem;
+  width: 4.8rem;
+}
+.chatting-field__robot-chat-content {
+  align-items: center;
+  background-color: #ffffff;
+  border: 0.2rem solid #3aabd2;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 4px #b8b8b8;
+  display: flex;
+  font-size: 1.6rem;
+  margin-left: 5rem;
+  padding: 0 1rem;
+  position: relative;
+  text-align: center;
+}
+.chatting-field__robot-chat-content::before {
+  border-bottom: 15px solid transparent;
+  border-right: 2rem solid #3aabd2;
+  border-top: 15px solid transparent;
+  content: "";
+  display: block;
+  height: 0;
+  left: -2rem;
+  position: absolute;
+  width: 0;
+}
+.chatting-field__robot-chat-content::after {
+  border-bottom: 15px solid transparent;
+  border-right: 2rem solid #ffffff;
+  border-top: 15px solid transparent;
+  content: "";
+  display: block;
+  height: 0;
+  left: -1.6rem;
+  position: absolute;
+  width: 0;
+}
+.chatting-field__user-chat {
+  display: flex;
+  margin-top: 5.5rem;
+}
+.chatting-field__user-chat-icon {
+  align-items: center;
+  background-color: #ffffff;
+  border: 0.2rem solid #3ad2b7;
+  border-radius: 1rem;
+  display: flex;
+  height: 7.2rem;
+  justify-content: center;
+  margin-right: 3.8rem;
+  width: 7.2rem;
+}
+.chatting-field__user-chat-icon img {
+  height: 4.8rem;
+  width: 4.8rem;
+}
+.chatting-field__user-chat-content {
+  align-items: center;
+  background-color: #ffffff;
+  border: 0.2rem solid #3ad2b7;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 4px #b8b8b8;
+  display: flex;
+  font-size: 1.6rem;
+  margin-left: auto;
+  margin-right: 5rem;
+  padding: 0 1rem;
+  position: relative;
+  text-align: center;
+}
+.chatting-field__user-chat-content::before {
+  border-bottom: 15px solid transparent;
+  border-left: 2rem solid #3ad2b7;
+  border-top: 15px solid transparent;
+  content: "";
+  display: block;
+  height: 0;
+  position: absolute;
+  right: -2rem;
+  width: 0;
+}
+.chatting-field__user-chat-content::after {
+  border-bottom: 15px solid transparent;
+  border-left: 2rem solid #ffffff;
+  border-top: 15px solid transparent;
+  content: "";
+  display: block;
+  height: 0;
+  position: absolute;
+  right: -1.6rem;
+  width: 0;
+}
+
+.sending-field {
+  display: flex;
+  height: 5.5rem;
+  margin-top: 4rem;
+}
+.sending-field__input-chat {
+  border: 0.2rem solid #8c8c8c;
+  border-right: none;
+  border-radius: 0.8rem 0 0 0.8rem;
+  width: 100%;
+}
+.sending-field__input-chat input {
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  height: 100%;
+  padding: 1rem;
+  width: 100%;
+}
+.sending-field__send-btn {
+  background-color: #3aabd2;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: bold;
+  height: 5.5rem;
+  transition: 0.2s;
+  width: 18rem;
+}
+.sending-field__send-btn:hover {
+  opacity: 0.8;
+}
+.sending-field__microphone {
+  background-color: #3ad2b7;
+  border: none;
+  border-radius: 0 0.8rem 0.8rem 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  padding: 0 3.6rem;
+  transition: 0.2s;
+}
+.sending-field__microphone:hover {
+  opacity: 0.8;
+}
+.sending-field__microphone img {
+  height: 3.6rem;
+  width: 2.5rem;
+}
+
+.footer {
+  height: 9.8rem;
+  margin-top: 8.5rem;
+  width: 100%;
+}
+.footer__logo {
+  text-align: center;
+}
+.footer__logo img {
+  height: 6.4rem;
+  width: 24rem;
+}
